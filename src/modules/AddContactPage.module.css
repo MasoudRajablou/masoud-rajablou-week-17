@@ -1,0 +1,47 @@
+.container {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.container h1 {
+  margin-bottom: 50px;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.properties label {
+  font-style: italic;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.properties input {
+  margin: 10px 0 25px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.properties p {
+  color: red;
+}
+
+.buttons button,
+.buttons a {
+  font-size: 4rem;
+}
+
+.buttons button:hover,
+.buttons a:hover {
+  font-size: 5rem;
+}

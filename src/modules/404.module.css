@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.container h2 > span {
+  text-decoration: underline;
+}
+
+.container span {
+  margin-left: 5px;
+}
+
+.warning {
+  text-align: center;
+  font-size: 3rem;
+  color: #ee0707;
+  animation: warningColor 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes warningColor {
+  0% {
+    color: #ee0707;
+  }
+  100% {
+    color: #fd8686;
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.loader {
+  justify-self: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 0.5px dashed #96616b;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact:hover {
+  background-color: #96616b;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 100px;
+  line-height: 100px;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact span {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+.contact button {
+  font-size: 1.5rem;
+  color: #ffead0;
+}
+
+.contact button:hover {
+  font-size: 2rem;
+  color: #113537;
+}
+
+@media screen and (width <= 1000px) {
+  .container {
+    justify-content: center;
+  }
+
+  .contact {
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    padding: 10px;
+    border: 0.5px dashed #96616b;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.warning {
+  text-align: center;
+  font-size: 3rem;
+  color: #ee0707;
+  animation: warningColor 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes warningColor {
+  0% {
+    color: #ee0707;
+  }
+  100% {
+    color: #fd8686;
+  }
+}
